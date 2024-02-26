@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(44, 3, 91);
+        color: white;
+    }
+
+    .navbar {
+        list-style-type: none;
+        padding: 5px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        background-color: rgb(21, 5, 73);
+        color: white;
+    }
+
+    nav div ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        background-color: rgb(21, 5, 73);
+
+    }
+
+    nav div ul :hover {
+        color: aqua;
+        font-size: 1.1rem;
+        cursor: pointer;
+
+    }
+
+    nav div ul li {
+        padding: 5px;
+        background-color: rgb(21, 5, 73);
+        color: white;
+    }
+
+    nav div {
+        width: 300px;
+        margin: auto;
+    }
+
+    nav div h1 {
+        background-color: rgb(21, 5, 73);
+    }
+
+    .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+        height: 60vh;
+
+    }
+    .divfirst {
+        width: 600px;
+    }
+
+    section div h2 {
+        margin: 50px;
+    }
+
+    #element {
+        margin-left: 50px;
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .innerdiv{
+        margin-top:70px;
+        margin-left: 50px;
+    }
+
+    #unordered {
+        list-style-type: none;
+    }
+
+    section div ul li {
+        padding: 10px;
+        background-color: rgb(140, 255, 0);
+        border: 1px solid rgb(62, 5, 46);
+        font-size: 1.2rem;
+        font-style: italic;
+        color: black;
+        margin-top: 10px;
+        animation-duration: 4ms;
+    }
+
+    .secdiv {
+        margin-top: 60px;
+        width: 600px;
+    }
+    h3 {
+        color: beige;
+        text-shadow: 1vh 1vh 1vh black;
+        font-size: 1.2rem;
+        font-style: italic;
+    }
+
+    main hr {
+        margin: 0vh 5vw;
+    }
+    section h1{
+        margin-left: 70px;
+        margin-bottom: 50px;
+        text-shadow: 3%;
+    }
+    
+    #span{
+        color: gray;
+        margin-left: 70px  
+    }
+    .skillf{
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    
+    .vertical{
+        height: 150px;
+        width: 1px;
+        margin-left: 40px;
+        background-color :azure;
+    
+    }
+    .skillf2{
+        display: flex;
+        justify-content: space-around;
+        width: 80vw;
+        margin-bottom: 30px;
+    }
+    .vertical1{
+        height: 70px;
+        width: 1px;
+        margin-left: 40px;
+        background-color :azure;
+    
+    }
+    
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <h1>Aditya's Portfolio</h1>
+            </div>
+            <div>
+                <ul class="navbar">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>contact me</li>
+                    <li>References</li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="divfirst">
+                <h2 style="font-style: italic;">
+                   
+                    Hello Everyone My Name is Aditya Srivastava and I am Passionate about 
+                </h2>
+                
+                <span id="element"></span>
+                <div class="innerdiv">
+                <h3>Phone - 8957760844</h3>
+                <h3>gmail - adityasrivastava1702@gmail.com</h3>
+            </div>
+            </div>
+
+            <div class="divsecond">
+                <img src="IMG_20230307_161042_352.jpg" alt="" width="350px" height="350px">
+            </div>
+        </section>
+        <hr>
+
+        <section>
+            <h1 style="text-shadow: 2px 1px 2px;  font-style: italic;">
+                My Skills :-
+            </h1>
+                            
+              <span id="span" style="font-size: large;"> Technical Skills </span>
+
+              <hr style="margin: 2vh 10vw;">
+          
+          <div class="skillf">
+            <div class="vertical">FrontEnd Web Development:- &nbsp; HTML CSS3 JavaScript Bootstrap </div>
+            <div class="vertical">Java Programming:- &nbsp; Basics &nbsp; Oops &nbsp; CoreJava</div>
+            <div class="vertical">Database:- &nbsp; Oracle Database &nbsp; MySQL Database</div>
+            <div class="vertical">VersionControlSystem:- &nbsp; Git</div>
+          </div>    
+
+                         
+          <span id="span" style="font-size: large;"> Management Skills </span>
+
+          <hr style="margin: 2vh 10vw;">
+      
+      <div class="skillf2">
+        <div class="vertical1">Product Management  </div>
+        <div class="vertical1">Leadership</div>
+        <div class="vertical1">HR Management</div>
+        <div class="vertical1">Project Management</div>
+      </div>    
+            
+        </section>
+
+
+    </main>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Development.', '&amp; Software Engineering.'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
